@@ -1,0 +1,191 @@
+header, body, nav, main, footer{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.color{
+  background: linear-gradient(to right, #174FE8, #5c1be4, #174FE8)
+}
+
+#nav-links{
+  display: none;
+}
+
+/* display block */
+.hamnav a {
+  color:  #fff;
+  text-align: center;
+  font-size:2em;
+  text-decoration: none;
+  padding: 3%;
+  display: block;
+}
+/* display block */
+.hamnav a.nav-icon {
+  display: block; 
+  position: absolute;
+  left: 0;
+  top : 0;
+  color: #f6eee4;
+  padding: 2%;
+}
+.nav-icon div{
+  height: 40px;
+  width: 40px;
+  color: #2a1f14;
+}
+.cntr{
+  text-align: center;
+}
+
+
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  background-color: #2b2b2b;
+}
+
+.mainColumn{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  width: 750px;
+  height: auto;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.home {
+  width: 600px;
+  height: auto;
+}
+
+.leftcol {
+flex: 1;
+padding: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.st{
+  width: 750px;
+    height: auto;
+}
+
+ 
+
+/* #nav-links{
+  display: none;
+} */
+
+
+
+
+@media only screen and (min-width:620px) {
+  .desk-nav {
+    display: block;
+}
+  .mobile, .mobile-nav {
+
+    display: none;
+}
+
+.container{
+  padding-bottom: 15%;
+}
+
+.projmain{
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  border-top: none;
+  display: inline-block;
+  font-size: 1.25em;
+  font-family: Geneva, Arial, sans-serif;
+  font-weight: bold;
+}
+
+nav li a {
+  padding: 0.5em;
+  display: block;
+  color: #f6eee4;
+  text-decoration: none;
+}
+
+aside {
+  grid-column: 1 / span 2;
+}
+
+.grid {
+  display: grid;
+  /* grid-template-columns: auto auto; */
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+aside {
+  grid-column: 1;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1000px), print {
+
+  nav li {
+    font-size: 1.5em;
+}
+
+nav li a {
+    padding: 0.5em 1.5em;
+}
+
+nav li a:hover {
+    color: #2a1f14;
+    background-color: #f6eee4;
+    opacity: 0.5;
+}
+
+.grid {
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+}
+
+aside {
+  grid-column: 1 / span 3;
+  font-size: 2em;
+}
+
+.form-grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+.btn{
+  grid-column: 1 / span 2;
+}
+
+}
